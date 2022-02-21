@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin-top: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(185, 179, 179);
+}
+
+form {
+    height: 500px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 2px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+
+button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: peachpuff;
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.errorMessage {
+    color: red;
+}
+
+.errorBorder {
+    border-color: red;
+}

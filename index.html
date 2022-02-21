@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Form Validation</title>
+</head>
+<body>
+    <form novalidate onsubmit="return false">
+        <label for="email">
+            <span>Email</span>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" class="errorMessage"></span>
+        </label>
+        
+
+        <label for="country">
+            <span>Country</span>
+            <input type="text" name="country" id="country" required pattern="[A-Za-z]+">
+            <span id="countryError" class="errorMessage"></span>
+        </label>
+
+
+        <label for="password">
+            <span>Password</span>
+            <input type="password" id="password" name="password" minlength="8" required>
+            <span id="passwordError" class="errorMessage"></span>
+        </label>
+
+        <label for="confirmPass">
+            <span>Confirm Password</span>
+            <input type="password" id="confirmPass" name="confirmPass" minlength="8" required>
+            <span id="confirmPassError" class="errorMessage"></span>
+        </label>
+
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
